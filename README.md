@@ -5,7 +5,7 @@
 #### apos abaixar as imagem criar os containers com os comandos
 #### docker run --name teste -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=desenvolvedores -d mysql:5.7.30
 #### docker run -p 80:80 -v ${pwd}:/var/www/html --name teste-gazin -d --link teste testes
-#### apos intalar os cantainer entrar no container do teste-gazin e rodar o comando composer-install e depois
+#### apos instalar os cantainer entrar no container do teste-gazin e rodar o comando composer-install e depois o migrate para gerar as tabelas arquivo com configuração do banco.env
 #### docker exec -it teste-gazin bash
 #### composer install
 #### php artisan migrate
